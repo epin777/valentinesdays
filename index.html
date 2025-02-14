@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Valentine</title>
+    <style>
+      body {
+        background-color: #ffb6c1;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        margin-top: 50px;
+      }
+      h1 {
+        color: #d70040;
+        font-size: 3rem;
+      }
+      .heart {
+        color: red;
+        font-size: 5rem;
+        animation: pulse 1s infinite alternate;
+      }
+      @keyframes pulse {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.2);
+        }
+      }
+      .message {
+        font-size: 1.5rem;
+        color: #800000;
+        margin-top: 20px;
+      }
+      .button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #ff69b4;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .button:hover {
+        background-color: #d70040;
+      }
+      .spotify-container {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Happy Valentine! 💖</h1>
+      <div class="heart">❤️</div>
+      <p class="message">
+        HAPPY VALENTINES DAY PATRICIA CAITLYN.<br />
+        SEMOGA SELALU DILIMPAHKAN KASIH SAYANG.<br />
+        TUHAN MEMBERKATI KAMU SELALU. 💕
+      </p>
+      <button class="button" onclick="showLove()">Klik untuk Cinta 💕</button>
+
+      <!-- Spotify Embed -->
+      <div class="spotify-container">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/3be9ACTxtcL6Zm4vJRUiPG?utm_source=generator"
+          width="300"
+          height="80"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <script>
+      function showLove() {
+        alert("Selamat Hari Valentine! Semoga kamu selalu bahagia! 💖");
+      }
+    </script>
+  </body>
+</html>
